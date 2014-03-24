@@ -10,4 +10,8 @@
 
 @interface APFViewController : UIViewController
 
+- (IBAction)clickTheButton:(id)sender;
+
 @end
+
+
