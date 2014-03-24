@@ -10,6 +10,8 @@
 
 @interface APFViewController : UIViewController
 
+-(IBAction)showAlert;
+
 @end
 
 
