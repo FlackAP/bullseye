@@ -20,11 +20,6 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (IBAction)clickTheButton:(id)sender
-{
-    NSLog(@"you really did click it!!!");
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
