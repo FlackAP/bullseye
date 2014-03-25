@@ -22,6 +22,7 @@
 {
     [super viewDidLoad];
     [self startNewRound];
+    [self updateLabels];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,6 +47,7 @@
     
     //starts a new round after alert is shown
     [self startNewRound];
+    [self updateLabels];
     
 }
 
@@ -55,6 +57,12 @@
     _targetValue = 1 + arc4random_uniform(100);
     _currentValue = self.slider.value;
     self.slider.value = _currentValue;
+}
+
+- (void)updateLabels
+{
+    self.targetLabel.text = [NSString stringWithFormat:@"%d",
+                             _targetValue];
 }
 
 //method to check the slider's value and round it to closest integer
