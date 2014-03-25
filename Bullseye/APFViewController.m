@@ -19,7 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	_currentValue = 50;
+	_currentValue = self.slider.value;
 }
 
 - (void)didReceiveMemoryWarning
