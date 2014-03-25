@@ -37,4 +37,9 @@
     
 }
 
+- (IBAction)sliderMoved:(UISlider *)slider
+{
+    NSLog(@"The value of the slider is now: %f", slider.value);
+}
+
 @end
