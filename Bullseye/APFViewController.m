@@ -32,10 +32,7 @@
 }
 
 - (IBAction)showAlert {
-    int difference = _currentValue - _targetValue;
-    if (difference < 0) {
-        difference = -difference;
-    }
+    int difference = abs(_targetValue - _currentValue);
 
     NSString *message = [NSString stringWithFormat:
                          @"The value of the slider is: %d\nThe target value is: %d\nThe difference is: %d",
