@@ -36,18 +36,23 @@
 - (IBAction)showAlert {
     int difference = abs(_targetValue - _currentValue);
     int points = 100 - difference;
-    _score += points;
     
     NSString *title;
     if (difference == 0) {
         title = @"Bull's Eye!";
+        points += 100;
     } else if (difference < 5) {
         title = @"You almost had it!";
+        if (difference == 1) {
+            points += 40;
+        }
     } else if (difference < 10) {
         title = @"Pretty good!";
     } else {
         title = @"Try again!";
-    }
+    };
+    
+    _score += points;
     
     NSString *message = [NSString stringWithFormat:
                          @"The value of the slider is: %d\nThe target value is: %d\nThe difference is: %d\nYou have scored %d points",
