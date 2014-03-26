@@ -36,12 +36,16 @@
 - (IBAction)showAlert {
     int difference = abs(_targetValue - _currentValue);
     int points = 100 - difference;
-    NSString *title;
     _score += points;
     
-    if (points == 100) {
+    NSString *title;
+    if (difference == 0) {
         title = @"Bull's Eye!";
-    } else{
+    } else if (difference < 5) {
+        title = @"You almost had it!";
+    } else if (difference < 10) {
+        title = @"Pretty good!";
+    } else {
         title = @"Try again!";
     }
     
