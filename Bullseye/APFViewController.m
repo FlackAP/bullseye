@@ -23,7 +23,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self startNewRound];
+    [self newGame];
     [self updateLabels];
 }
 
@@ -61,20 +61,15 @@
     UIAlertView *alertView = [[UIAlertView alloc]
                               initWithTitle:title
                               message:message
-                              delegate:nil
+                              delegate:self
                               cancelButtonTitle:@"OK"
                               otherButtonTitles:nil];
     [alertView show];
     
-    
-    //starts a new round after alert is shown
-    [self startNewRound];
-    [self updateLabels];
-    
 }
 
 //method to create a new round- to be performed when user clicks "click me!"
-- (void)startNewRound
+- (void)newRound
 {
     _round += 1;
     _targetValue = 1 + arc4random_uniform(100);
@@ -96,6 +91,27 @@
 - (IBAction)sliderMoved:(UISlider *)slider {
     
         _currentValue = lroundf(slider.value);
+}
+
+//method that starts a new round and updates labels when alert is closed
+- (void)alertView:(UIAlertView *)alertView
+didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    [self newRound];
+    [self updateLabels];
+}
+
+-(void)restart {
+    [self newGame];
+    [self updateLabels];
+}
+
+//resets values for score and round
+- (void)newGame
+{
+    _score = 0;
+    _round = 0;
+    [self newRound];
 }
 
 @end

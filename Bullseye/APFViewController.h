@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface APFViewController : UIViewController
+//BullsEyeViewController listens to the UIAlertView as a delegate
+@interface APFViewController : UIViewController <UIAlertViewDelegate>
 
 @property (nonatomic, weak) IBOutlet UISlider *slider;
 @property (nonatomic, weak) IBOutlet UILabel *targetLabel;
@@ -16,6 +17,8 @@
 @property (nonatomic, weak) IBOutlet UILabel *roundLabel;
 
 -(IBAction)showAlert;
+
+-(IBAction)restart;
 
 - (IBAction)sliderMoved:(UISlider *)slider;
 

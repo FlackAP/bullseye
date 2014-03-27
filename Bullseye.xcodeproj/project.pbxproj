@@ -21,6 +21,7 @@
 		061830E518E0BB2B006D97B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061830C718E0BB2B006D97B5 /* UIKit.framework */; };
 		061830ED18E0BB2B006D97B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 061830EB18E0BB2B006D97B5 /* InfoPlist.strings */; };
 		061830EF18E0BB2B006D97B5 /* BullseyeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 061830EE18E0BB2B006D97B5 /* BullseyeTests.m */; };
+		066E350118E3E2C600A31058 /* APFInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066E350018E3E2C600A31058 /* APFInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		061830EA18E0BB2B006D97B5 /* BullseyeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BullseyeTests-Info.plist"; sourceTree = "<group>"; };
 		061830EC18E0BB2B006D97B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		061830EE18E0BB2B006D97B5 /* BullseyeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BullseyeTests.m; sourceTree = "<group>"; };
+		066E34FF18E3E2C600A31058 /* APFInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APFInfoViewController.h; path = ../APFInfoViewController.h; sourceTree = "<group>"; };
+		066E350018E3E2C600A31058 /* APFInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APFInfoViewController.m; path = ../APFInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				061830D518E0BB2B006D97B5 /* Main.storyboard */,
 				061830D818E0BB2B006D97B5 /* APFViewController.h */,
 				061830D918E0BB2B006D97B5 /* APFViewController.m */,
+				066E34FF18E3E2C600A31058 /* APFInfoViewController.h */,
+				066E350018E3E2C600A31058 /* APFInfoViewController.m */,
 				061830DB18E0BB2B006D97B5 /* Images.xcassets */,
 				061830CA18E0BB2B006D97B5 /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066E350118E3E2C600A31058 /* APFInfoViewController.m in Sources */,
 				061830DA18E0BB2B006D97B5 /* APFViewController.m in Sources */,
 				061830D418E0BB2B006D97B5 /* APFAppDelegate.m in Sources */,
 				061830D018E0BB2B006D97B5 /* main.m in Sources */,
@@ -457,6 +463,7 @@
 				061830F418E0BB2B006D97B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		061830F518E0BB2B006D97B5 /* Build configuration list for PBXNativeTarget "BullseyeTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +472,7 @@
 				061830F718E0BB2B006D97B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
