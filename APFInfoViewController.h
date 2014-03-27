@@ -10,6 +10,8 @@
 
 @interface APFInfoViewController : APFViewController
 
+@property (nonatomic, weak) IBOutlet UIWebView *webView;
+
 - (IBAction)close;
 
 @end

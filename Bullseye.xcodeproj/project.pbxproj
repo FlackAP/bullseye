@@ -22,6 +22,7 @@
 		061830ED18E0BB2B006D97B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 061830EB18E0BB2B006D97B5 /* InfoPlist.strings */; };
 		061830EF18E0BB2B006D97B5 /* BullseyeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 061830EE18E0BB2B006D97B5 /* BullseyeTests.m */; };
 		066E350118E3E2C600A31058 /* APFInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066E350018E3E2C600A31058 /* APFInfoViewController.m */; };
+		066E350318E4A11800A31058 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 066E350218E4A11800A31058 /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		061830EE18E0BB2B006D97B5 /* BullseyeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BullseyeTests.m; sourceTree = "<group>"; };
 		066E34FF18E3E2C600A31058 /* APFInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APFInfoViewController.h; path = ../APFInfoViewController.h; sourceTree = "<group>"; };
 		066E350018E3E2C600A31058 /* APFInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APFInfoViewController.m; path = ../APFInfoViewController.m; sourceTree = "<group>"; };
+		066E350218E4A11800A31058 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		061830C918E0BB2B006D97B5 /* Bullseye */ = {
 			isa = PBXGroup;
 			children = (
+				066E350218E4A11800A31058 /* BullsEye.html */,
 				061830D218E0BB2B006D97B5 /* APFAppDelegate.h */,
 				061830D318E0BB2B006D97B5 /* APFAppDelegate.m */,
 				061830D518E0BB2B006D97B5 /* Main.storyboard */,
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				061830DC18E0BB2B006D97B5 /* Images.xcassets in Resources */,
+				066E350318E4A11800A31058 /* BullsEye.html in Resources */,
 				061830CE18E0BB2B006D97B5 /* InfoPlist.strings in Resources */,
 				061830D718E0BB2B006D97B5 /* Main.storyboard in Resources */,
 			);
